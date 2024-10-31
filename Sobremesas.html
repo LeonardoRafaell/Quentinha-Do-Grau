@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.Css" />
+    <script src="./script.Js"></script>
+    <title>Quentinhas do grau</title>
+  </head>
+  <body>
+    <button class="Voltar">
+      <a href="inicio.html">Voltar</a>
+    </button>
+    <div class="container">
+      <div class="ImagenSobremesa1">
+        <img
+          src="./Imagens/lentrecote de paris cheese-cake.webp"
+          title="Sobremesa1"
+        />
+        <h3>Cheese-cake</h3>
+        <p class="preco">R$ 8,00</p>
+        <button onclick="adicionarAoCarrinho('Cheese-cake', 8.00)">
+          Adicionar ao Carrinho
+        </button>
+      </div>
+
+      <div class="ImagenSobremesa2">
+        <img
+          src="./Imagens/Ovo de chocolate com frutas vermelhas.jpg"
+          title="Sobremesa2"
+        />
+        <h3>Ovo de Chocolate com Frutas Vermelhas</h3>
+        <p class="preco">R$ 6,50</p>
+        <button
+          onclick="adicionarAoCarrinho('Ovo de Chocolate com Frutas Vermelhas', 6.50)"
+        >
+          Adicionar ao Carrinho
+        </button>
+      </div>
+
+      <div class="ImagenSobremesa3">
+        <img src="./Imagens/Sobremesa na taça.webp" title="Sobremesa3" />
+        <h3>Sobremesa na Taça</h3>
+        <p class="preco">R$ 5,00</p>
+        <button onclick="adicionarAoCarrinho('Sobremesa na Taça', 5.00)">
+          Adicionar ao Carrinho
+        </button>
+      </div>
+
+      <div class="ImagenSobremesa4">
+        <img src="./Imagens/Pavê.jpg" title="Sobremesa4" />
+        <h3>Pavê</h3>
+        <p class="preco">R$ 4,00</p>
+        <button onclick="adicionarAoCarrinho('Pavê', 4.00)">
+          Adicionar ao Carrinho
+        </button>
+      </div>
+
+      <div class="ImagenSobremesa5">
+        <img src="./Imagens/Pudim.jpeg" title="Sobremesa5" />
+        <h3>Pudim</h3>
+        <p class="preco">R$ 7,00</p>
+        <button onclick="adicionarAoCarrinho('Pudim', 7.00)">
+          Adicionar ao Carrinho
+        </button>
+      </div>
+
+      <div class="ImagenSobremesa6">
+        <img src="./Imagens/chocolate fudge brownie.jpg" title="Sobremesa6" />
+        <h3>Fudge Brownie de Chocolate</h3>
+        <p class="preco">R$ 7,50</p>
+        <button
+          onclick="adicionarAoCarrinho('Fudge Brownie de Chocolate', 7.50)"
+        >
+          Adicionar ao Carrinho
+        </button>
+      </div>
+    </div>
+    <div id="carrinho-container">
+      <h2>Carrinho de Compras</h2>
+      <ul id="carrinho"></ul>
+      <p>Total: R$ <span id="total">0.00</span></p>
+    </div>
+
+    
+  </body>
+</html>

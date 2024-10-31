@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.Css" />
+  <script src="./script.Js"></script>
+  <title>Quentinhas do Grau</title>
+</head>
+<body>
+  <button class="Voltar">
+    <a href="inicio.html">Voltar</a>
+  </button>
+
+  <div class="container">
+    <div class="produto" id="produto1">
+      <img src="./Imagens/quentinhas-do-sereno.jpg" title="Almoço1" />
+      <h3>Quentinha com carne cozida e abóbora</h3>
+      <p>Deliciosa quentinha com carne cozida e abóbora.</p>
+      <p class="preco">R$ 24,50</p>
+      <button onclick="adicionarAoCarrinho('Quentinha com carne cozida e abóbora', 24.50)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="produto" id="produto2">
+      <img src="./Imagens/168850970564a49d09baf9b_75_75.jpeg" title="Almoço2" />
+      <h3>Quentinha com churrasco completo</h3>
+      <p>Deliciosa quentinha com churrasco completo.</p>
+      <p class="preco">R$ 43,00</p>
+      <button onclick="adicionarAoCarrinho('Quentinha com churrasco completo', 43.00)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="produto" id="produto3">
+      <img src="./Imagens/170999592465ec77946c708_75_75.jpeg" title="Almoço3" />
+      <h3>Quentinha com carne de porco</h3>
+      <p>Deliciosa quentinha com carne de porco.</p>
+      <p class="preco">R$ 26,50</p>
+      <button onclick="adicionarAoCarrinho('Quentinha com carne de porco', 26.50)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="produto" id="produto4">
+      <img src="./Imagens/quentinha-de-frango-frito.jpg" title="Almoço4" />
+      <h3>Quentinha com frango frito</h3>
+      <p>Deliciosa quentinha com frango frito.</p>
+      <p class="preco">R$ 19,50</p>
+      <button onclick="adicionarAoCarrinho('Quentinha com frango frito', 19.50)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="produto" id="produto5">
+      <img src="./Imagens/168850967764a49ced63ab0_75_75.jpeg" title="Almoço5" />
+      <h3>Quentinha com frango</h3>
+      <p>Deliciosa quentinha com frango.</p>
+      <p class="preco">R$ 20,00</p>
+      <button onclick="adicionarAoCarrinho('Quentinha com frango', 20.00)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="produto" id="produto6">
+      <img src="./Imagens/Quentinha-01.webp" title="Almoço6" />
+      <h3>Quentinha com almoço completo</h3>
+      <p>Deliciosa quentinha completa com peixe grelhado.</p>
+      <p class="preco">R$ 30,00</p>
+      <button onclick="adicionarAoCarrinho('Quentinha com almoço completo', 30.00)">Adicionar ao Carrinho</button>
+    </div>
+  </div>
+
+  <div id="carrinho-container">
+    <h2>Carrinho de Compras</h2>
+    <ul id="carrinho"></ul>
+    <p>Total: R$ <span id="total">0.00</span></p>
+  </div>
+</body>
+</html>

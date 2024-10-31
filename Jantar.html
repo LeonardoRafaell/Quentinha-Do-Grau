@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.Css" />
+  <script src="./script.Js"></script>
+  <title>Quentinhas do Grau - Jantar</title>
+</head>
+<body>
+  <!-- Botão de Voltar -->
+  <button class="Voltar">
+    <a href="inicio.html">Voltar</a>
+  </button>
+
+  <!-- Lista de Pizzas -->
+  <div class="container">
+    <div class="ImagemJantar">
+      <img src="./Imagens/Pizza de queijo.jpeg" title="Jantar1" />
+      <h3>Pizza de Queijo</h3>
+      <p>Pizza deliciosa de queijo.</p>
+      <p class="preco">R$ 47,50</p>
+      <button onclick="adicionarAoCarrinho('Pizza de Queijo', 47.50)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="ImagemJantar">
+      <img src="./Imagens/Pizza de frango.jpeg" title="Jantar2" />
+      <h3>Pizza de Frango</h3>
+      <p>Pizza deliciosa de frango.</p>
+      <p class="preco">R$ 49,50</p>
+      <button onclick="adicionarAoCarrinho('Pizza de Frango', 49.50)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="ImagemJantar">
+      <img src="./Imagens/Pizza de calabresa.jpeg" title="Jantar3" />
+      <h3>Pizza de Calabresa</h3>
+      <p>Pizza deliciosa de calabresa.</p>
+      <p class="preco">R$ 50,00</p>
+      <button onclick="adicionarAoCarrinho('Pizza de Calabresa', 50.00)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="ImagemJantar">
+      <img src="./Imagens/Pizza portuguesa.jpeg" title="Jantar4" />
+      <h3>Pizza Portuguesa</h3>
+      <p>Pizza deliciosa portuguesa.</p>
+      <p class="preco">R$ 45,00</p>
+      <button onclick="adicionarAoCarrinho('Pizza Portuguesa', 45.00)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="ImagemJantar">
+      <img src="./Imagens/Pizza de frango com catupiry.jpg" title="Jantar5" />
+      <h3>Pizza de Frango com Catupiry</h3>
+      <p>Pizza deliciosa de frango com catupiry.</p>
+      <p class="preco">R$ 52,50</p>
+      <button onclick="adicionarAoCarrinho('Pizza de Frango com Catupiry', 52.50)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="ImagemJantar">
+      <img src="./Imagens/Pizza de calabresa com catupiry.jpeg" title="Jantar6" />
+      <h3>Pizza de Calabresa com Catupiry</h3>
+      <p>Pizza deliciosa de calabresa com catupiry.</p>
+      <p class="preco">R$ 56,00</p>
+      <button onclick="adicionarAoCarrinho('Pizza de Calabresa com Catupiry', 56.00)">Adicionar ao Carrinho</button>
+    </div>
+  </div>
+
+  <div id="carrinho-container">
+    <h2>Carrinho de Compras</h2>
+    <ul id="carrinho"></ul>
+    <p>Total: R$ <span id="total">0.00</span></p>
+  </div>
+  
+  
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.Css" />
+  <script src="./script.Js"></script>
+  <title>Quentinhas do Grau</title>
+</head>
+<body>
+  <!-- Botão de Voltar -->
+  <button class="Voltar">
+    <a href="inicio.html">Voltar</a>
+  </button>
+
+  <!-- Lista de Bebidas -->
+  <div class="container">
+    <div class="ImagemBebida">
+      <img src="./Imagens/coca cola.png" title="Bebida1" />
+      <h3>Copo de Coca Cola</h3>
+      <p class="preco">R$ 2,50</p>
+      <button onclick="adicionarAoCarrinho('Copo de Coca Cola', 2.50)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="ImagemBebida">
+      <img src="./Imagens/cerveja.webp" title="Bebida2" />
+      <h3>Copo de Cerveja</h3>
+      <p class="preco">R$ 3,50</p>
+      <button onclick="adicionarAoCarrinho('Copo de Cerveja', 3.50)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="ImagemBebida">
+      <img src="./Imagens/cocktail com bebidas coloridas.png" title="Bebida3" />
+      <h3>Cocktail com Bebidas Coloridas</h3>
+      <p class="preco">R$ 5,50</p>
+      <button onclick="adicionarAoCarrinho('Cocktail com Bebidas Coloridas', 5.50)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="ImagemBebida">
+      <img src="./Imagens/cocktail spritz rakia.png" title="Bebida4" />
+      <h3>Cocktail Spritz Rakia</h3>
+      <p class="preco">R$ 6,50</p>
+      <button onclick="adicionarAoCarrinho('Cocktail Spritz Rakia', 6.50)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="ImagemBebida">
+      <img src="./Imagens/copo de cocktail de limao.avif" title="Bebida5" />
+      <h3>Cocktail de Limão</h3>
+      <p class="preco">R$ 4,50</p>
+      <button onclick="adicionarAoCarrinho('Cocktail de Limão', 4.50)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="ImagemBebida">
+      <img src="./Imagens/cocktel com bebidas.jpg" title="Bebida6" />
+      <h3>Cocktail de Bebidas</h3>
+      <p class="preco">R$ 4,50</p>
+      <button onclick="adicionarAoCarrinho('Cocktail de Bebidas', 4.50)">Adicionar ao Carrinho</button>
+    </div>
+  </div>
+
+  <div id="carrinho-container">
+    <h2>Carrinho de Compras</h2>
+    <ul id="carrinho"></ul>
+    <p>Total: R$ <span id="total">0.00</span></p>
+  </div>
+</body>
+</html>
